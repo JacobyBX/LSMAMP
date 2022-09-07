@@ -1,4 +1,3 @@
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
 
@@ -23,33 +22,96 @@ a {
 }
 
 body {
-    background-color: black;
+  background-color: rgb(32, 32, 32);
 }
 
-nav {background-color: #1C1C1C;
-display: flex;justify-content: space-around;align-items: center;height: 100px;margin: 25px;border-radius: 10px;}
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 25px;
+  border-radius: 10px;
+}
 
-header {position: fixed; top: 0px; left: 0px; width: 100%;}
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
 
-.link-container {display: flex;text-decoration: none;}
+.link-container {
+  display: flex;
+  text-decoration: none;
+}
 
-.link-container > li {list-style-type: none;padding: 10px 17px;font-size: 14px;}
+.link-container>li {
+  list-style-type: none;
+  padding: 39px 17px;
+  font-size: 14px;
+ 
+}
 
-.link-container > li > a {text-decoration: none;}
+.link-container>li>a {
+  text-decoration: none;
+}
 
-.logo-container {display: flex;}
+.active-link {
+  border-top: solid 2.5px gold;
+}
 
-.logo-container > img {width: 147px;}
+.active-link > a  {
+  font-weight: 600;
+  color: #E0CA3C;
+}
 
-.logo-text {width: 315px;margin-top: 37px;}
+.logo-container {
+  display: flex;
+  margin-left: 18px;
+}
 
-.logo-text > h4 {font-size: 19px;}
+.logo-text>h4>span {
+  color: #E0CA3C;
+}
 
-.logo-text > p {padding: 5px 13px;
-    background-color: #E0CA3C;
-    width: fit-content;
-    color: black;
-    font-weight: 600;
-    border-radius: 5px;margin-top: 10px;}
+.logo-container>img {
+  width: 147px;
+}
 
-.social-container > a > img {width: 25px;padding: 4px; background-color: black;height: 25px;border-radius: 25px;object-fit: scale-down;}
+.logo-text {
+  width: 315px;
+}
+
+.logo-text>h4 {
+  font-size: 19px;
+}
+
+.logo-text>p {
+  padding: 5px 13px;
+  background-color: #E0CA3C;
+  width: fit-content;
+  color: black;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+.social-container {
+  padding-right: 32px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-container>a>img {
+  width: 25px;
+  padding: 4px;
+  background-color: transparent;
+  height: 25px;
+  border-radius: 25px;
+  object-fit: scale-down;
+}
