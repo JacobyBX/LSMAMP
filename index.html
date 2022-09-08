@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSMAMP | At USM</title>
     <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="/vivify.min.css">
 </head>
 <body>
 
@@ -39,12 +41,12 @@
                 </div>
             </div>
            <ul class="link-container">
-               <li class="active-link"><a href="">Home</a></li>
-               <li><a href="">About</a></li>
-               <li><a href="">Gallery</a></li>
-               <li><a href="">Events</a></li>
-               <li><a href="">Scholarships</a></li>
-               <li><a href="">Officers</a></li>
+            <li class="active-link"><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/events.html">Events</a></li>
+            <li><a href="/scholarships.html">Scholarships</a></li>
+            <li><a href="/officers.html">Officers</a></li>
            </ul>
            <div class="social-container">
                 <a href=""><img src="/Assets/f_logo_RGB-White_1024 2.svg" alt=""></a>
@@ -55,7 +57,7 @@
         </nav>
     </header>
 
-    <section class="hero-sect">
+    <section class="hero-sect vivify fadeIn duration-300 delay-200">
         <div class="hero-img">
             <img class="hero-img-item" src="/Images/1.png" alt="">
             <img class="hero-img-overlay" src="/Images/overlay.png">
@@ -69,7 +71,7 @@
 </p>
 
 <div class="btn-group">
-    <a href="">
+    <a href="https://forms.gle/rgjvqpv9De6aB7XHA" target="_blank">
         <button class="btn btn-primary">Apply Now</button>
     </a>
     <a href="#" class="cryptedmail"
@@ -91,40 +93,11 @@
 
 
 
-    <section class="events">
+    <section class="events vivify fadeIn delay-400 duration-300">
         <h3>Upcoming Events</h3>
-        <div class="event-wrapper">
-            <div class="event-item">
-                <a href="">
-                    <span>September 8, 2022</span>
-                    <h2>Official Informational Event</h2>
-                    <p>A presentation with information about who we are, our history, our mission, and how students can benefit from the organization.</p>
-                </a>
-            </div>
+        <div class="event-wrapper " id="events">
+         
     
-            <div class="event-item">
-                <a href="">
-                    <span>September 8, 2022</span>
-                    <h2>Official Informational Event</h2>
-                    <p>A presentation with information about who we are, our history, our mission, and how students can benefit from the organization.</p>
-                </a>
-            </div>
-    
-            <div class="event-item">
-                <a href="">
-                    <span>September 8, 2022</span>
-                    <h2>Official Informational Event</h2>
-                    <p>A presentation with information about who we are, our history, our mission, and how students can benefit from the organization.</p>
-                </a>
-            </div>
-
-            <div class="event-item">
-                <a href="">
-                    <span>September 8, 2022</span>
-                    <h2>Official Informational Event</h2>
-                    <p>A presentation with information about who we are, our history, our mission, and how students can benefit from the organization.</p>
-                </a>
-            </div>
         </div>
 
 
@@ -149,5 +122,52 @@
             
        </div>
     </footer>
+
+
+
+
+
+
+
+
+
+    
+
+    <script src="/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min.js"></script>
+    <!-- online handlebars.js-->
+
+
+    <!-----------------------News Feed------------------------>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/lsmamp/events', function (data) {
+                var template = Handlebars.compile($('#events-template').html())
+                $('#events').html(template(data.events))
+            })
+        })
+    </script>
+
+    <script id="events-template" type="text/x-handlebars-template">
+
+   
+        
+
+{{#each this}}
+
+<div class="event-item">
+    <a href="">
+        <span>{{date}}</span>
+        <h2>{{title}}</h2>
+        <p>{{description}}.</p>
+    </a>
+</div>
+
+
+{{/each}}
+
+
+  </script>
+
 </body>
 </html>

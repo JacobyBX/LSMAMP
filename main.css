@@ -11,19 +11,58 @@
 
 
 
-.maintenance {position: fixed; top: 0px; left: 0px; background-color: black; width: 100%; height: 100vh;z-index: 150;display: flex;justify-content: center;flex-direction: column;align-items: center;flex: 1 1 auto;flex-wrap: wrap;}
+.maintenance {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  z-index: 150;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
 
-.maintenance > img {width: 50%;flex: 15; }
+}
 
-.m-text {display: flex;flex-direction: column;gap: 0px;flex: 2;}
+.maintenance>img {
+  width: 50%;
+  flex: 15;
+}
 
-.m-text > p {font-size:13px}
+.m-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  flex: 2;
+}
 
-.m-text > a {color:#E0CA3C;width: 100%; text-align: center;font-weight: normal !important; font-size: 14px;}
+.m-text>p {
+  font-size: 13px
+}
 
-.m-text > a:hover {color:#E0CA3C;text-decoration: underline;}
+.m-text>a {
+  color: #E0CA3C;
+  width: 100%;
+  text-align: center;
+  font-weight: normal !important;
+  font-size: 14px;
+}
 
-.maintenance > p {font-size: 13px; color: rgb(100, 100, 100);padding: 15px;flex: 1;}
+.m-text>a:hover {
+  color: #E0CA3C;
+  text-decoration: underline;
+}
+
+.maintenance>p {
+  font-size: 13px;
+  color: rgb(100, 100, 100);
+  padding: 15px;
+  flex: 1;
+}
 
 
 
@@ -70,7 +109,7 @@ header {
   list-style-type: none;
   padding: 39px 17px;
   font-size: 14px;
- 
+
 }
 
 .link-container>li>a {
@@ -83,7 +122,7 @@ header {
   padding: 36px 17px 33px 17px !important;
 }
 
-.active-link > a  {
+.active-link>a {
   font-weight: 600;
   color: #E0CA3C;
 
@@ -161,45 +200,94 @@ header {
 
 
 
-.hero-img-item {width: 100%;height: 70vh;object-fit: cover;    filter: brightness(0.5);}
+.hero-img-item {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
 
-.hero-img-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 70vh;background-color: rgba(0, 0, 0, 0.5);z-index:1}
+.hero-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1
+}
 
-.hero-img {position:absolute;width: 100%;}
+.hero-img {
+  position: absolute;
+  width: 100%;
+}
 
-.hero-text {position: relative;z-index: 10;;height: 70vh;display: flex;flex-direction: column;justify-content: center;gap: 10px;padding: 40px 100px;}
+.hero-text {
+  position: relative;
+  z-index: 10;
+  ;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 100px;
+}
 
-.hero-text > h1 {font-size: 42px;line-height: 52px;}
+.hero-text>h1 {
+  font-size: 42px;
+  line-height: 52px;
+}
 
-.hero-text > p {font-size: 17px;line-height: 30px;}
+.hero-text>p {
+  font-size: 17px;
+  line-height: 30px;
+}
 
-.hero-text {width: 700px;}
+.hero-text {
+  width: 700px;
+}
 
-.hero-sect {display: flex;position: relative;z-index: 1;}
+.hero-sect {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
 
-.yellowGrid {position: relative;    z-index: 13;
+.yellowGrid {
+  position: relative;
+  z-index: 13;
   position: absolute;
   bottom: 138px;
-  right: 50px;}
+  right: 50px;
+}
 
-  .btn-group {
+.btn-group {
   display: flex;
   gap: 13px;
   margin-top: 7px;
-  }
+}
 
-.btn {padding: 8.5px 20px;border-radius: 5px;background-color: #E0CA3C;color: black;font-weight: 600;font-size: 15px;transition: 0.1s ease;cursor: pointer;border: none;}
+.btn {
+  padding: 8.5px 20px;
+  border-radius: 5px;
+  background-color: #E0CA3C;
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.1s ease;
+  cursor: pointer;
+  border: none;
+}
 
-.btn:hover {filter: brightness(1.1);}
+.btn:hover {
+  filter: brightness(1.1);
+}
 
-.btn-secondary {background-color: black;color: #E0CA3C;}
-
-
-
-
-
-
-
+.btn-secondary {
+  background-color: black;
+  color: #E0CA3C;
+}
 
 
 
@@ -211,26 +299,60 @@ header {
 
 
 
-.events {    display: flex;
+
+
+
+
+
+
+
+.events {
+  display: flex;
   flex-direction: column;
   margin-top: -103px;
   height: 190px;
   overflow: hidden;
   position: relative;
-  z-index: 15;}
+  z-index: 15;
+}
 
-.event-wrapper {display: flex;gap: 30px;justify-content: flex-start;    padding: 0px 100px;flex-wrap: wrap;}
+.event-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: flex-start;
+  padding: 0px 100px;
+  flex-wrap: wrap;
+}
 
-.event-item {width: 300px;position: relative;}
+.event-item {
+  width: 300px;
+  position: relative;
+}
 
-.event-item > a > span {color: #E0CA3C;font-size: 14px;}
+.event-item>a>span {
+  color: #E0CA3C;
+  font-size: 14px;
+}
 
-.event-item > a > h2 {font-size: 23px;line-height: 26px;    margin-top: 4px;
-  margin-bottom: 4px;}
+.event-item>a>h2 {
+  font-size: 23px;
+  line-height: 26px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
 
-.event-item > a > p {font-size: 14px;}
+.event-item>a>p {
+  font-size: 14px;
+  max-height: 57px;
+  overflow: hidden;
+}
 
-.events > h3 {font-size: 30px;font-size: 17px; padding-left: 100px;margin-bottom: 15px;}
+.events>h3 {
+  font-size: 30px;
+  font-size: 17px;
+  padding-left: 100px;
+  margin-bottom: 15px;
+}
 
 
 
@@ -238,13 +360,19 @@ header {
 
 
 
-
+footer{    position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 96px;
+  background-color: #00000080;
+  backdrop-filter: blur(22px);}
 
 
 .footer-container {
   padding: 0px 100px;
 
-  display: flex;justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   margin-top: 40px;
   filter: brightness(0.8);
 
@@ -254,18 +382,43 @@ header {
 
 .link-group {
   display: flex;
-font-size: 14px;
+  font-size: 14px;
   gap: 20px;
 }
 
-.link-group > a {
+.link-group>a {
   filter: brightness(0.8);
 }
 
-.link-group > a:hover {
+.link-group>a:hover {
   filter: brightness(1);
 }
 
-.footer-container > span {
-  font-size: 14px;;
+.footer-container>span {
+  font-size: 14px;
+  ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wysywig-content {padding: 194px 109px;
+  line-height: 28px;}
+
+.wys-container > h1 {  font-size: 42px;
+  line-height: 52px;}
