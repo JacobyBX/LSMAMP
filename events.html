@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LSMAMP | At USM</title>
     <link rel="stylesheet" href="/main.css">
-
+    
     <link rel="stylesheet" href="/vivify.min.css">
 </head>
-<body>
+<body style="background-color: #161616">
 
 
     <div class="maintenance">
@@ -41,12 +41,12 @@
                 </div>
             </div>
            <ul class="link-container">
-            <li class="active-link"><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/gallery.html">Gallery</a></li>
-            <li><a href="/events.html">Events</a></li>
-            <li><a href="/scholarships.html">Scholarships</a></li>
-            <li><a href="/officers.html">Officers</a></li>
+               <li class=""><a href="/">Home</a></li>
+               <li ><a  href="/about.html">About</a></li>
+               <li><a href="/gallery.html">Gallery</a></li>
+               <li class="active-link"><a href="/events.html">Events</a></li>
+               <li><a href="/scholarships.html">Scholarships</a></li>
+               <li><a href="/officers.html">Officers</a></li>
            </ul>
            <div class="social-container">
                 <a href=""><img src="/Assets/f_logo_RGB-White_1024 2.svg" alt=""></a>
@@ -57,43 +57,9 @@
         </nav>
     </header>
 
-    <section class="hero-sect vivify fadeIn duration-300 delay-200">
-        <div class="hero-img">
-            <img class="hero-img-item" src="/Images/1.png" alt="">
-            <img class="hero-img-overlay" src="/Images/overlay.png">
-        </div>
-
-        <div class="hero-text">
-            <h1>Empowering Underrepresented Students’ In the STEM disciplines</h1>
- 
-            <p>The purpose of the LSMAMP program at USM is to broaden and increase the number of highly competent, globally astute USM STEM graduates.
-
-</p>
-
-<div class="btn-group">
-    <a href="https://docs.google.com/forms/d/1WaT2qtelz-SJjkh3tLUGr6E-zRJ_NDtLUJdvuChzxYA/viewform?edit_requested=true" target="_blank">
-        <button class="btn btn-primary">Apply Now</button>
-    </a>
-    <a href="#" class="cryptedmail"
-   data-name="lsmamp"
-   data-domain="usm"
-   data-tld="edu"
-   onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"> <button class="btn btn-secondary">Contact Us</button></a>
-   
-  
-</div>
-        </div>
-
-       
-
-        <img class="yellowGrid" src="/Images/yellowgrid.svg" alt="">
-
-    </section>
 
 
-
-
-    <section class="events vivify fadeIn delay-400 duration-300">
+    <section class="events vivify fadeIn delay-200 duration-300 event-page">
         <h3>Upcoming Events</h3>
         <div class="event-wrapper " id="events">
          
@@ -156,11 +122,16 @@
 {{#each this}}
 
 <div class="event-item">
-    <a href="/events.html">
+    <a href="">
         <span>{{date}}</span>
         <h2>{{title}}</h2>
         <p>{{description}}.</p>
     </a>
+    
+{{#if link}}
+<a href="{{link}}" target="_blank" class="event-link">Register Here</a>
+ 
+{{/if}}
 </div>
 
 
@@ -168,6 +139,35 @@
 
 
   </script>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <span>
+                ©2022 LSMAMP
+            </span>
+
+            <div class="link-group">
+               
+                <a href="/privacypolicy.html">Privacy Policy</a>
+                <a href="/Assets/Constitution%20LSMAMP-USM.pdf" target="_blank">LSMAMP USM Constitution</a>
+                
+            </div>
+            
+       </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    
 
 </body>
 </html>

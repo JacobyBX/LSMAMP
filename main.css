@@ -444,8 +444,31 @@ footer{    position: fixed;
   .gallery-container {display: flex;justify-content: flex-start;flex-wrap: wrap;transition: 0.2s ease;}
 
   .gallery-container > img {width
-  :50%;object-fit: cover;}
+  :50%;object-fit: cover;cursor: pointer;}
 
   .gallery {margin-top: 77px;margin-bottom: 77px;transition: 0.2s ease;}
 
   .zoom {position: fixed; width: 100% !important; height: 100vh;top: 0px; left: 0px; width: 100%; height: 100vh;object-fit: scale-down !important ;z-index: 150;background-color: black;transition: 0.2s ease;}
+
+
+
+
+
+
+
+
+
+
+
+
+  .event-page {    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 161px 0px;
+    margin-top: 0px;
+    height: fit-content;}
+
+    .event-page > div >div > a > p  {height: fit-content !important;overflow: visible;max-height: none;}
+
+    .event-link {color: #E0CA3C;font-weight: 600;text-decoration: underline;font-size: 15px;margin-top: 5px;}
