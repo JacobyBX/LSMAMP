@@ -479,3 +479,49 @@ footer{    position: fixed;
     .event-page > div >div > a > p  {height: fit-content !important;overflow: visible;max-height: none;}
 
     .event-link {color: #E0CA3C;font-weight: 600;text-decoration: underline;font-size: 15px;margin-top: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .officer-wrap {   display: flex;
+      flex-wrap: wrap;
+      gap: 2%;
+      justify-content: center;padding: 150px 35px;
+      max-width: 1000px;
+  }
+
+    .officer-item {width:31%;}
+
+    .officer-item > img {width: 100%;border-radius: 5px;}
+
+    .officer-container {padding: 147px 54px;
+    }
+
+    .officers-container {
+      display: flex;
+      justify-content: center;
+    }
+    .officer-item > h3 {margin-top: 10px;font-weight: 600;font-size: 21px ;}
+
+    .officer-item > p {    font-weight: 600;
+      font-size: 14px;
+      margin-top: -3px;}
+
+    .officer-item > h5 {font-weight: normal;
+      margin-top: 2px;
+      margin-bottom: 40px;
+  }
