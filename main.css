@@ -371,7 +371,8 @@ footer{    position: fixed;
   bottom: 0px;
   height: 96px;
   background-color: #00000080;
-  backdrop-filter: blur(22px);}
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);}
 
 
 .footer-container {
