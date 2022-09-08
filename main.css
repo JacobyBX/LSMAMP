@@ -25,7 +25,7 @@
   align-items: center;
   flex: 1 1 auto;
   flex-wrap: wrap;
-
+display: none;
 }
 
 .maintenance>img {
@@ -83,13 +83,14 @@ body {
 }
 
 nav {
-  background-color: black;
+  background-color: #000000cc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   margin: 25px;
   border-radius: 10px;
+  backdrop-filter: blur(9px);
 }
 
 header {
@@ -417,8 +418,34 @@ footer{    position: fixed;
 
 
 
-.wysywig-content {padding: 194px 109px;
-  line-height: 28px;}
+.wysywig-content {padding: 194px 0px;
+  line-height: 28px;display: flex; justify-content: center;}
+
+  .wys-container {width: 60%;}
 
 .wys-container > h1 {  font-size: 42px;
   line-height: 52px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .gallery-container {display: flex;justify-content: flex-start;flex-wrap: wrap;}
+
+  .gallery-container > img {width
+  :50%;object-fit: cover;transition: 0.2s ease;}
+
+  .gallery {margin-top: 77px;margin-bottom: 77px;}
+
+  .gallery-container > img:hover {width: 50%;object-fit: scale-down;}

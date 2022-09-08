@@ -42,8 +42,8 @@
             </div>
            <ul class="link-container">
                <li class=""><a href="/">Home</a></li>
-               <li class="active-link"><a  href="/about.html">About</a></li>
-               <li><a href="/gallery.html">Gallery</a></li>
+               <li ><a  href="/about.html">About</a></li>
+               <li class="active-link"><a href="/gallery.html">Gallery</a></li>
                <li><a href="/events.html">Events</a></li>
                <li><a href="/scholarships.html">Scholarships</a></li>
                <li><a href="/officers.html">Officers</a></li>
@@ -58,17 +58,22 @@
     </header>
 
 
+    <section class="gallery">
+        <div class="gallery-container" id="gallery">
 
-    <section class="wysywig-content vivify fadeIn delay-100 duration-300">
-        <div class="wys-container">
-            <h1>About Us</h1>
-            <p>As a partner in the Mississippi Alliance, USM’s School of Computing Sciences and Computer Engineering hosts strategic activities and initiatives to improve the recruitment, retention, and graduation rates of students traditionally underrepresented in STEM majors and careers. LSMAMP aligns with the goals of the NSF INCLUDES Mississippi Alliance for Women in Computing (NSF 1649312) to increase the numbers of women of color on computing pathways in the state.
-
-            </p>
         </div>
     </section>
 
-
+    <script>
+        for (let i = 1; i < 10; i++) {
+            const gallery = document.getElementById('gallery');
+            const img = document.createElement('img');
+            img.src = `Gallery/${i}.png`;
+            img.loading = 'lazy';
+            img.classList.add('vivify', 'fadeIn', 'delay-' + i * 150);
+            gallery.appendChild(img);
+        }
+    </script>
 
     <footer>
         <div class="footer-container">
