@@ -10,6 +10,23 @@
 }
 
 
+
+.maintenance {position: fixed; top: 0px; left: 0px; background-color: black; width: 100%; height: 100vh;z-index: 150;display: flex;justify-content: center;flex-direction: column;align-items: center;flex: 1 1 auto;flex-wrap: wrap;}
+
+.maintenance > img {width: 50%;flex: 15; }
+
+.m-text {display: flex;flex-direction: column;gap: 0px;flex: 2;}
+
+.m-text > p {font-size:13px}
+
+.m-text > a {color:#E0CA3C;width: 100%; text-align: center;font-weight: normal !important; font-size: 14px;}
+
+.m-text > a:hover {color:#E0CA3C;text-decoration: underline;}
+
+.maintenance > p {font-size: 13px; color: rgb(100, 100, 100);padding: 15px;flex: 1;}
+
+
+
 input,
 textarea,
 button,
