@@ -71,6 +71,9 @@
             img.src = `Gallery/${i}.png`;
             img.loading = 'lazy';
             img.classList.add('vivify', 'fadeIn', 'delay-' + i * 150);
+            img.addEventListener('click', () => {
+                img.classList.toggle('zoom');
+            })
             gallery.appendChild(img);
         }
     </script>
