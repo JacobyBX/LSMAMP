@@ -22,7 +22,8 @@ a {
 }
 
 body {
-  background-color: rgb(32, 32, 32);
+  background-color: black;
+
 }
 
 nav {
@@ -40,6 +41,7 @@ header {
   top: 0px;
   left: 0px;
   width: 100%;
+  z-index: 100;
 }
 
 .link-container {
@@ -56,15 +58,19 @@ header {
 
 .link-container>li>a {
   text-decoration: none;
+  font-weight: 600;
 }
 
 .active-link {
   border-top: solid 2.5px gold;
+  padding: 36px 17px 33px 17px !important;
 }
 
 .active-link > a  {
   font-weight: 600;
   color: #E0CA3C;
+
+
 }
 
 .logo-container {
@@ -114,4 +120,135 @@ header {
   height: 25px;
   border-radius: 25px;
   object-fit: scale-down;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-img-item {width: 100%;height: 70vh;object-fit: cover;}
+
+.hero-img-overlay {position: absolute;top: 0;left: 0;width: 100%;height: 70vh;background-color: rgba(0, 0, 0, 0.5);z-index:1}
+
+.hero-img {position:absolute;width: 100%;}
+
+.hero-text {position: relative;z-index: 10;;height: 70vh;display: flex;flex-direction: column;justify-content: center;gap: 10px;padding: 40px 100px;}
+
+.hero-text > h1 {font-size: 42px;line-height: 52px;}
+
+.hero-text > p {font-size: 17px;line-height: 30px;}
+
+.hero-text {width: 700px;}
+
+.hero-sect {display: flex;position: relative;z-index: 1;}
+
+.yellowGrid {position: relative;    z-index: 13;
+  position: absolute;
+  bottom: 138px;
+  right: 50px;}
+
+  .btn-group {
+  display: flex;
+  gap: 13px;
+  margin-top: 7px;
+  }
+
+.btn {padding: 8.5px 20px;border-radius: 5px;background-color: #E0CA3C;color: black;font-weight: 600;font-size: 15px;transition: 0.1s ease;cursor: pointer;border: none;}
+
+.btn:hover {filter: brightness(1.1);}
+
+.btn-secondary {background-color: black;color: #E0CA3C;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.events {    display: flex;
+  flex-direction: column;
+  margin-top: -103px;
+  height: 190px;
+  overflow: hidden;
+  position: relative;
+  z-index: 15;}
+
+.event-wrapper {display: flex;gap: 30px;justify-content: flex-start;    padding: 0px 100px;flex-wrap: wrap;}
+
+.event-item {width: 300px;position: relative;}
+
+.event-item > a > span {color: #E0CA3C;font-size: 14px;}
+
+.event-item > a > h2 {font-size: 23px;line-height: 26px;    margin-top: 4px;
+  margin-bottom: 4px;}
+
+.event-item > a > p {font-size: 14px;}
+
+.events > h3 {font-size: 30px;font-size: 17px; padding-left: 100px;margin-bottom: 15px;}
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+  padding: 0px 100px;
+
+  display: flex;justify-content: space-between;
+  margin-top: 40px;
+  filter: brightness(0.8);
+
+}
+
+
+
+.link-group {
+  display: flex;
+font-size: 14px;
+  gap: 20px;
+}
+
+.link-group > a {
+  filter: brightness(0.8);
+}
+
+.link-group > a:hover {
+  filter: brightness(1);
+}
+
+.footer-container > span {
+  font-size: 14px;;
 }
