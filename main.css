@@ -521,6 +521,10 @@ footer{    position: fixed;
     .logo-container > img {object-position: -11px 0px;
       width: 125px;}
 
+      .officer-item {width: 46% !important;}
+
+      .officer-wrap {gap: 6% !important;padding: 150px 17px !important;}
+
 }
 
 
@@ -536,7 +540,7 @@ footer{    position: fixed;
     .hero-text > p {font-size: 15px;}
 
     .hero-text {   
-      padding: 0px 40px 47px 40px;}
+    padding: 0px 21px;}
 
       .btn-group {    margin-bottom: 92px;}
 
