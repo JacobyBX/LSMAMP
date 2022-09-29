@@ -527,6 +527,8 @@ footer{    position: fixed;
 @media only screen and (max-width: 520px) {
   .yellowGrid {display: none;}
 
+  .hero-text {margin-top: 50px;}
+
   .hero-img {margin-top: 140px;display: none;}
   .hero-text > h1 {    font-size: 30px;
     line-height: 39px;}
@@ -537,6 +539,8 @@ footer{    position: fixed;
       padding: 0px 40px 47px 40px;}
 
       .btn-group {    margin-bottom: 92px;}
+
+      .event-item {width: 100% !important;}
 }
 
 
