@@ -455,7 +455,7 @@ footer{    position: fixed;
 @media only screen and (max-width: 1200px) {
 .social-container {display: none;}
 .social-mobile {display: flex;}
-.logo-text {display: none;} 
+
 }
 
 
@@ -470,6 +470,8 @@ footer{    position: fixed;
 .events {height: fit-content
 }
 .hero-text {padding: 40px 40px;}
+
+
 
 .link-container > li > a {    padding: 7px 15px;
   background-color: #252525;
@@ -508,6 +510,16 @@ footer{    position: fixed;
       footer {position: static !important;}
 
     .active-link > a {background-color: #E0CA3C !important;color: black !important;}
+
+    .logo-text {width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;}
+
+    .logo-text > h4 {font-size: 14px;}
+
+    .logo-container > img {object-position: -11px 0px;
+      width: 125px;}
 
 }
 
