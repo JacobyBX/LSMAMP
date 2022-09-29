@@ -527,13 +527,13 @@ footer{    position: fixed;
 @media only screen and (max-width: 520px) {
   .yellowGrid {display: none;}
 
-  .hero-img {margin-top: 140px;}
+  .hero-img {margin-top: 140px;display: none;}
   .hero-text > h1 {    font-size: 30px;
     line-height: 39px;}
 
     .hero-text > p {font-size: 15px;}
 
-    .hero-text {    justify-content: flex-end;
+    .hero-text {   
       padding: 0px 40px 47px 40px;}
 
       .btn-group {    margin-bottom: 92px;}
