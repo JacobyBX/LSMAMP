@@ -492,7 +492,7 @@ footer{    position: fixed;
     border-radius: 0px;
   }
 
-  .gallery {margin-top: 190px !important;}
+  .gallery {margin-top: 136px !important;}
 
   .active-link {border: none;}
 
@@ -524,6 +524,13 @@ footer{    position: fixed;
       .officer-item {width: 46% !important;}
 
       .officer-wrap {gap: 6% !important;padding: 150px 17px !important;}
+
+      .event-wrapper {padding: 0px 24px !important;}
+
+      .events > h3 {padding-left: 24px;}
+
+      .event-wrapper {gap: 50px;}
+      .footer-container > span {display: none;}
 
 }
 
